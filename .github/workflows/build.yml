@@ -19,6 +19,9 @@ jobs:
           node-version-file: '.nvmrc'
           cache: "npm"
 
+      - name: Install corepack
+        run: corepack enable
+
       - name: Install Dependencies
         run: yarn
 
