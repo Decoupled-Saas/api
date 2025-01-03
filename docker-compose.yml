@@ -1,0 +1,39 @@
+services:
+  postgres:
+    build:
+      context: postgres
+    env_file: .env
+    environment:
+      POSTGRES_USER: $DB_USER
+      POSTGRES_PASSWORD: $DB_PASSWORD
+      POSTGRES_DB: $DB_NAME
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  mailpit:
+    image: axllent/mailpit
+    logging:
+      driver: 'none' # disable saving logs
+    ports:
+      - 1025:1025 # smtp server
+      - 8025:8025 # web ui
+
+  pgweb:
+    restart: always
+    image: sosedoff/pgweb
+    ports:
+      - '8081:8081'
+    links:
+      - postgres:postgres
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://$DB_USER:$DB_PASSWORD@postgres:5432/$DB_NAME
+    depends_on:
+      - postgres
+
+volumes:
+  db-data:
