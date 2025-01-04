@@ -1,0 +1,18 @@
+import type { Request, Response } from "express";
+import {AuthenticatedRequest} from "@/types/express";
+import { StatusCodes } from "http-status-codes";
+
+
+class {{view}}Controller {
+  async getAll(req: Request, res: Response) {
+
+    const authenticatedReq = req as AuthenticatedRequest; // Safely cast req
+
+    const data = await {{view}}Service.get(req.org, req.params.id ? req.params.id : null)
+
+    const serviceResponse = ServiceResponse.success("{{view}} details", data, StatusCodes.OK);
+    return handleServiceResponse(serviceResponse, res);
+  }
+}
+
+export const {{lowerView}}Controller = new {{view}}Controller();

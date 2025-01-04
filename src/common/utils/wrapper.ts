@@ -1,4 +1,3 @@
-import type { AuthenticatedRequest } from "@/controllers/authController";
 import type { NextFunction, Request, Response } from "express";
 
 /**
@@ -9,9 +8,9 @@ import type { NextFunction, Request, Response } from "express";
  * @returns A function that invokes the handler and catches any errors.
  */
 export const wrapper = (
-  fn: (req: Request | AuthenticatedRequest, res: Response, next: NextFunction) => Promise<Response>,
-): ((req: Request | AuthenticatedRequest, res: Response, next: NextFunction) => void) => {
-  return (req: Request | AuthenticatedRequest, res: Response, next: NextFunction): void => {
+  fn: (req: Request, res: Response, next: NextFunction) => Promise<Response>,
+): ((req: Request, res: Response, next: NextFunction) => void) => {
+  return (req: Request, res: Response, next: NextFunction): void => {
     Promise.resolve(fn(req, res, next)).catch(next);
   };
 };

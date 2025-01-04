@@ -2,7 +2,8 @@
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "formatter": {
     "indentStyle": "space",
-    "lineWidth": 120
+    "lineWidth": 120,
+    "ignore": ["bin/**/*"]
   },
   "organizeImports": { "enabled": true },
   "linter": {
@@ -20,7 +21,8 @@
       "complexity": {
         "noForEach": "off"
       }
-    }
+    },
+    "ignore": ["bin/**/*"]
   },
   "vcs": {
     "enabled": true,

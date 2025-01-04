@@ -1,0 +1,5 @@
+extend registration to create organisation
+extend login to include role
+complete permission guard
+build a cli component to list existing registered users and upgrade one to admin
+build role and permission management system

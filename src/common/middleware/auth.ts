@@ -1,16 +1,16 @@
 import { handleServiceResponse } from "@/common/utils/httpHandlers";
 import { ServiceResponse } from "@/common/utils/serviceResponse";
-import type { AuthenticatedRequest } from "@/controllers/authController";
 import { keyService } from "@/services/keyService";
 import { tokenService } from "@/services/tokenService";
-import type { NextFunction, Response } from "express";
+import type { AuthenticatedRequest } from "@/types/express";
+import type { NextFunction, Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import jwt, { JsonWebTokenError, NotBeforeError, TokenExpiredError } from "jsonwebtoken";
-import jwkToPem from "jwk-to-pem";
 import type jwkToBuffer from "jwk-to-pem";
+import jwkToPem from "jwk-to-pem";
 import { JWK } from "node-jose";
 
-export async function requireAuth(req: AuthenticatedRequest, res: Response, next: NextFunction) {
+export async function requireAuth(req: Request, res: Response, next: NextFunction) {
   try {
     const header = req.header("Authorization");
     if (!header) {
@@ -55,7 +55,7 @@ export async function requireAuth(req: AuthenticatedRequest, res: Response, next
     try {
       const pem = jwkToPem(<jwkToBuffer.JWK>key.toJSON(true));
       const decoded = jwt.verify(token, pem); // Synchronous handling of token verification
-      req.user = <string>decoded.sub; // Attach decoded token info to the request object if needed
+      (req as AuthenticatedRequest).user = <string>decoded.sub; // Attach decoded token info to the request object if needed
     } catch (err) {
       if (err instanceof TokenExpiredError) {
         const serviceResponse = ServiceResponse.failure(

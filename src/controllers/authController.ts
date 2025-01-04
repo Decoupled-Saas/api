@@ -3,12 +3,9 @@ import { handleServiceResponse } from "@/common/utils/httpHandlers";
 import { ServiceResponse } from "@/common/utils/serviceResponse";
 import { tokenService } from "@/services/tokenService";
 import { userService } from "@/services/userService";
+import type { AuthenticatedRequest } from "@/types/express";
 import type { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
-
-export interface AuthenticatedRequest extends Request {
-  user: string;
-}
 
 class AuthController {
   register = async (req: Request, res: Response): Promise<Response> => {
@@ -48,8 +45,9 @@ class AuthController {
     return handleServiceResponse(serviceResponse, res);
   };
 
-  logout = async (req: AuthenticatedRequest, res: Response): Promise<Response> => {
-    await tokenService.deleteToken(req.user);
+  logout = async (req: Request, res: Response): Promise<Response> => {
+    const authenticatedReq = req as AuthenticatedRequest; // Safely cast req
+    await tokenService.deleteToken(authenticatedReq.user);
     const serviceResponse = ServiceResponse.success("User Logged out", null, StatusCodes.OK);
     return handleServiceResponse(serviceResponse, res);
   };

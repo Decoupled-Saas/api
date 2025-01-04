@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { wrapper } from "@/common/utils/wrapper";
+import { requireAuth } from "@/common/middleware/auth";
+import {{view}}Controller from "@/controllers/{{view}}Controller";
+
+const {{view}}Router = Router();
+
+{{view}}Router.get('/', requireAuth, wrapper({{view}}Controller.getAll));
+
+export default {{view}}Router;
