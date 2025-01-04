@@ -42,6 +42,11 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=sha
+          flavor: |
+            latest=true
 
       # Build and tag the production Docker image
       - name: Build and push Docker image
