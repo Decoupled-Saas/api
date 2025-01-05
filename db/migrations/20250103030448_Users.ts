@@ -10,6 +10,9 @@ export async function up(knex: Knex): Promise<void> {
     table.string("last_name");
     table.string("email");
     table.string("password");
+    table.uuid("role_id").references("id").inTable("Roles");
+    table.boolean("onboarded").defaultTo(false);
+    table.boolean("support_enabled").defaultTo(true);
 
     defaultHistoryFields(knex, table);
   });

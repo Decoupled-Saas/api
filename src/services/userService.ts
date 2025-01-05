@@ -11,7 +11,7 @@ class UserService {
     return;
   }
 
-  async createUser(first_name: string, last_name: string, email: string, password: string) {
+  async createUser(first_name: string, last_name: string, email: string, password: string, role_id: string) {
     const exists = await this.getUserByEmail(email);
     if (exists) {
       return exists;
@@ -22,6 +22,7 @@ class UserService {
       first_name,
       last_name,
       email,
+      role_id,
       password: passHash,
     });
 

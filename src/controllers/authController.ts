@@ -1,6 +1,7 @@
 import { dataValidator } from "@/common/utils/dataValidator";
 import { handleServiceResponse } from "@/common/utils/httpHandlers";
 import { ServiceResponse } from "@/common/utils/serviceResponse";
+import { iamService } from "@/services/iamService";
 import { tokenService } from "@/services/tokenService";
 import { userService } from "@/services/userService";
 import type { AuthenticatedRequest } from "@/types/express";
@@ -17,8 +18,8 @@ class AuthController {
 
     // @ts-ignore
     const { first_name, last_name, email, password } = data;
-
-    const user = await userService.createUser(first_name, last_name, email, password);
+    const role = await iamService.findRoleByName("owner");
+    const user = await userService.createUser(first_name, last_name, email, password, role.id);
 
     const serviceResponse = ServiceResponse.success("User registered", user, StatusCodes.CREATED);
     return handleServiceResponse(serviceResponse, res);
@@ -39,7 +40,7 @@ class AuthController {
       return handleServiceResponse(serviceResponse, res);
     }
 
-    const tokens = await tokenService.generateAuthTokens(user.id);
+    const tokens = await tokenService.generateAuthTokens(user.id, user.role_id);
 
     const serviceResponse = ServiceResponse.success("User Logged In", { user, tokens }, StatusCodes.OK);
     return handleServiceResponse(serviceResponse, res);

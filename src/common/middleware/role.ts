@@ -1,16 +1,24 @@
 import { handleServiceResponse } from "@/common/utils/httpHandlers";
 import { ServiceResponse } from "@/common/utils/serviceResponse";
-import { iamService } from "@/services/iamService";
 import type { AuthenticatedRequest } from "@/types/express";
 import type { NextFunction, Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 
-export function permissionGuard(requiredPermission: string) {
-  return (req: Request, res: Response, next: NextFunction) => {
+export function rolesGuard(requiredRole: string) {
+  return async (req: Request, res: Response, next: NextFunction) => {
     const authenticatedReq = req as AuthenticatedRequest; // Safely cast req
+    const user = authenticatedReq.user;
     const role = authenticatedReq.role;
-    const validRole = iamService.roleHasPermission(role, requiredPermission);
-    if (!validRole) {
+    if (!user || !role || !Array.isArray(role)) {
+      const serviceResponse = ServiceResponse.failure(
+        "Access denied: User not authenticated or roles not defined.",
+        null,
+        StatusCodes.UNAUTHORIZED,
+      );
+      return handleServiceResponse(serviceResponse, res);
+    }
+
+    if (!role.includes(requiredRole)) {
       const serviceResponse = ServiceResponse.failure(
         "Access denied: Insufficient role.",
         null,

@@ -1,6 +1,4 @@
-// @ts-ignore
 import type Knex from "knex";
-import type { CreateTableBuilder } from "knex";
 
 export const createOnUpdateTrigger = (tableName: string) => `
   CREATE TRIGGER "${tableName}_updated_at"
@@ -13,10 +11,10 @@ export const deleteOnUpdateTrigger = (tableName: string) => `
 `;
 
 // @ts-ignore
-export const defaultHistoryFields = (knex: Knex, table: CreateTableBuilder): void => {
+export const defaultHistoryFields = (knex: Knex, table: Knex.CreateTableBuilder): void => {
   table.boolean("active").notNullable().defaultTo(true);
 
-  table.timestamp("createdAt").notNullable().defaultTo(knex.fn.now());
-  table.timestamp("updatedAt").notNullable().defaultTo(knex.fn.now());
-  table.timestamp("deletedAt");
+  table.timestamp("created_at").notNullable().defaultTo(knex.fn.now());
+  table.timestamp("updated_at").notNullable().defaultTo(knex.fn.now());
+  table.timestamp("deleted_at");
 };

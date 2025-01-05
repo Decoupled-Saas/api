@@ -5,8 +5,8 @@ import { JWK, JWS } from "node-jose";
 import CreateSignResult = JWS.CreateSignResult;
 
 class TokenService {
-  generateToken = async (user_id: string, expires: moment.Moment, type: string) => {
-    const keyList = await db("Keys").orderBy("createdAt", "DESC");
+  generateToken = async (user_id: string, role_id: string, expires: moment.Moment, type: string) => {
+    const keyList = await db("Keys").orderBy("created_at", "DESC");
     const keys: any[] = [];
 
     switch (type) {
@@ -28,6 +28,7 @@ class TokenService {
     const opt = { compact: true, jwk: key, fields: { type: "jwt" } };
     const payload = JSON.stringify({
       sub: user_id,
+      role: role_id,
       iat: moment().unix(),
       exp: expires.unix(),
       type,
@@ -47,12 +48,12 @@ class TokenService {
     });
   };
 
-  generateAuthTokens = async (user_id: string) => {
+  generateAuthTokens = async (user_id: string, role_id: string) => {
     const accessTokenExpires = moment().add(env.JWT_ACCESS_EXPIRATION_MINUTES, "minutes");
-    const accessToken = await this.generateToken(user_id, accessTokenExpires, "ACCESS");
+    const accessToken = await this.generateToken(user_id, role_id, accessTokenExpires, "ACCESS");
 
     const refreshTokenExpires = moment().add(env.JWT_REFRESH_EXPIRATION_DAYS, "days");
-    const refreshToken = await this.generateToken(user_id, refreshTokenExpires, "REFRESH");
+    const refreshToken = await this.generateToken(user_id, role_id, refreshTokenExpires, "REFRESH");
 
     await this.saveToken(user_id, accessToken, refreshToken);
     return {

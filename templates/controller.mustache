@@ -1,14 +1,16 @@
 import type { Request, Response } from "express";
 import {AuthenticatedRequest} from "@/types/express";
 import { StatusCodes } from "http-status-codes";
-
+import {ServiceResponse} from "@/common/utils/serviceResponse";
+import {handleServiceResponse} from "@/common/utils/httpHandlers";
+import { {{lowerView}}Service } from "@/services/{{lowerView}}Service";
 
 class {{view}}Controller {
   async getAll(req: Request, res: Response) {
 
     const authenticatedReq = req as AuthenticatedRequest; // Safely cast req
 
-    const data = await {{view}}Service.get(req.org, req.params.id ? req.params.id : null)
+    const data = await {{lowerView}}Service.get(authenticatedReq.org, req.params.id ? req.params.id : null)
 
     const serviceResponse = ServiceResponse.success("{{view}} details", data, StatusCodes.OK);
     return handleServiceResponse(serviceResponse, res);

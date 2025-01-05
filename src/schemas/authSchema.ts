@@ -10,8 +10,8 @@ export const AuthRegisterSchema = z.object({
   first_name: z.string().openapi({ example: "jane" }),
   last_name: z.string().openapi({ example: "doe" }),
   active: z.boolean().default(true),
-  createdAt: z.date().openapi({ example: "2025-01-01T00:00:00.000Z" }),
-  updatedAt: z.date().openapi({ example: "2025-01-01T00:00:00.000Z" }),
+  created_at: z.date().openapi({ example: "2025-01-01T00:00:00.000Z" }),
+  updated_at: z.date().openapi({ example: "2025-01-01T00:00:00.000Z" }),
 });
 
 export const AuthRegisterInputSchema = z.object({

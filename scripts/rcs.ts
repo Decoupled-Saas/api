@@ -5,10 +5,16 @@ import Mustache from "mustache";
 
 export async function create(type: string, name: string) {
   switch (type) {
-    case "service":
+    case "service": {
+      const serviceName = name.toLowerCase();
+      await createFile("service", serviceName, "src/services");
       break;
-    case "controller":
+    }
+    case "controller": {
+      const controllerName = name.toLowerCase();
+      await createFile("controller", controllerName, "src/controllers");
       break;
+    }
     case "route": {
       const routeName = name.toLowerCase();
       await createFile("route", routeName, "src/routes");
@@ -23,17 +29,23 @@ async function createFile(templateName: string, viewName: string, filePath: stri
   const viewData = changeCase.capitalCase(viewName);
   switch (templateName) {
     case "route": {
-      const renderedRoute = Mustache.render(template, { view: viewName });
+      const renderedRoute = Mustache.render(template, { view: viewData, lowerView: viewName });
       fs.writeFileSync(`${path.join(process.cwd(), filePath)}/${viewName}.latest.ts`, renderedRoute);
-      console.log(`Route file ${`${path.join(process.cwd(), filePath)}/${viewName}.latest.js`} created successfully`);
+      console.log(`Route file ${`${path.join(process.cwd(), filePath)}/${viewName}.latest.ts`} created successfully`);
       break;
     }
     case "controller": {
       const renderedController = Mustache.render(template, { view: viewData, lowerView: viewName });
-      fs.writeFileSync(`${path.join(process.cwd(), filePath)}/${viewName}Controller.js`, renderedController);
+      fs.writeFileSync(`${path.join(process.cwd(), filePath)}/${viewName}Controller.ts`, renderedController);
       console.log(
-        `Controller file ${`${path.join(process.cwd(), filePath)}/${viewName}Controller.js`} created successfully`,
+        `Controller file ${`${path.join(process.cwd(), filePath)}/${viewName}Controller.ts`} created successfully`,
       );
+      break;
+    }
+    case "service": {
+      const renderedService = Mustache.render(template, { view: viewData, lowerView: viewName });
+      fs.writeFileSync(`${path.join(process.cwd(), filePath)}/${viewName}Service.ts`, renderedService);
+      console.log(`Service file ${`${path.join(process.cwd(), filePath)}/${viewName}Service.ts`} created successfully`);
       break;
     }
   }
