@@ -63,7 +63,7 @@
     "@types/morgan": "^1",
     "@types/mustache": "^4",
     "@types/node-jose": "^1.1.13",
-    "@types/pg": "^8",
+    "@types/pg": "^8.12.0",
     "@types/swagger-ui-express": "^4.1.7",
     "@types/zxcvbn": "^4",
     "husky": "^9.1.7",
