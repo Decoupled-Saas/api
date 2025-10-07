@@ -33,7 +33,7 @@
     "express-rate-limit": "^7.5.0",
     "express-validator": "^7.2.1",
     "figlet": "^1.9.3",
-    "helmet": "^8.0.0",
+    "helmet": "^8.1.0",
     "http-status-codes": "^2.3.0",
     "inquirer": "^12.3.0",
     "jsonwebtoken": "^9.0.2",
