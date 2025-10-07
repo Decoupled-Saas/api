@@ -25,7 +25,7 @@
     "chalk": "^5.5.0",
     "change-case": "^5.4.4",
     "commander": "^13.1.0",
-    "compression": "^1.7.5",
+    "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "envalid": "^8.0.0",
@@ -54,7 +54,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/bcryptjs": "^2.4.6",
-    "@types/compression": "^1",
+    "@types/compression": "^1.8.1",
     "@types/cors": "^2.8.17",
     "@types/express": "^4",
     "@types/figlet": "^1",
