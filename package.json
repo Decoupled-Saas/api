@@ -67,7 +67,7 @@
     "@types/swagger-ui-express": "^4.1.7",
     "@types/zxcvbn": "^4",
     "husky": "^9.1.7",
-    "tsup": "^8.3.5",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },
