@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "yarn@4.10.3",
   "scripts": {
     "dev": "tsx watch --clear-screen=false src/index.ts",
     "build": "tsup",
