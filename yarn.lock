@@ -1340,7 +1340,7 @@ __metadata:
     helmet: "npm:^8.1.0"
     http-status-codes: "npm:^2.3.0"
     husky: "npm:^9.1.7"
-    inquirer: "npm:^12.4.3"
+    inquirer: "npm:^12.5.2"
     jsonwebtoken: "npm:^9.0.2"
     jwk-to-pem: "npm:^2.0.7"
     knex: "npm:^3.1.0"
@@ -2630,7 +2630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^12.4.3":
+"inquirer@npm:^12.5.2":
   version: 12.9.6
   resolution: "inquirer@npm:12.9.6"
   dependencies:
