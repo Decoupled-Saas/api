@@ -60,7 +60,7 @@
     "@types/figlet": "^1",
     "@types/jsonwebtoken": "^9",
     "@types/jwk-to-pem": "^2",
-    "@types/morgan": "^1",
+    "@types/morgan": "^1.9.9",
     "@types/mustache": "^4",
     "@types/node-jose": "^1.1.13",
     "@types/pg": "^8.12.0",
