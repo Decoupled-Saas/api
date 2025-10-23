@@ -1340,7 +1340,7 @@ __metadata:
     "@types/zxcvbn": "npm:4.4.5"
     app-root-path: "npm:^3.1.0"
     bcryptjs: "npm:^2.4.3"
-    chalk: "npm:^5.5.0"
+    chalk: "npm:^5.6.2"
     change-case: "npm:^5.4.4"
     commander: "npm:^13.1.0"
     compression: "npm:^1.8.1"
@@ -1577,7 +1577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.5.0":
+"chalk@npm:^5.6.2":
   version: 5.6.2
   resolution: "chalk@npm:5.6.2"
   checksum: 10c0/99a4b0f0e7991796b1e7e3f52dceb9137cae2a9dfc8fc0784a550dc4c558e15ab32ed70b14b21b52beb2679b4892b41a0aa44249bcb996f01e125d58477c6976
