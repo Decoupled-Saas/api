@@ -1339,7 +1339,7 @@ __metadata:
     "@types/swagger-ui-express": "npm:4.1.7"
     "@types/zxcvbn": "npm:4.4.5"
     app-root-path: "npm:^3.1.0"
-    bcryptjs: "npm:^2.4.3"
+    bcryptjs: "npm:^3.0.2"
     chalk: "npm:^5.5.0"
     change-case: "npm:^5.4.4"
     commander: "npm:^13.1.0"
@@ -1438,10 +1438,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bcryptjs@npm:^2.4.3":
-  version: 2.4.3
-  resolution: "bcryptjs@npm:2.4.3"
-  checksum: 10c0/b969467087ed7a01ff905a1c6a0c45014ec586248a448ea08370c8ed8bb314bda16a870ca23e0961d7d23bdce1a04c76fa70a9d680be814fa9ac7d8fc61870a3
+"bcryptjs@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "bcryptjs@npm:3.0.2"
+  bin:
+    bcrypt: bin/bcrypt
+  checksum: 10c0/a0923cac99f83e913f8f4e4f42df6a27c6593b24d509900331d1280c4050b1544e602a0ac67b43f7bb5c969991c3ed77fd72f19b7dc873be8ee794da3d925c7e
   languageName: node
   linkType: hard
 
