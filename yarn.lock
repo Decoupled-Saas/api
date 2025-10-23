@@ -16,7 +16,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:^1.9.4":
+"@biomejs/biome@npm:1.9.4":
   version: 1.9.4
   resolution: "@biomejs/biome@npm:1.9.4"
   dependencies:
@@ -994,7 +994,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/bcryptjs@npm:^2.4.6":
+"@types/bcryptjs@npm:2.4.6":
   version: 2.4.6
   resolution: "@types/bcryptjs@npm:2.4.6"
   checksum: 10c0/1182663f0c081c5c58760019459cd309335e9b5fc6552780b0fd21b6c5f25661a844709e46218796f4bdbebe6736e11cfc5af0729bc2cdb0160943650aceb3da
@@ -1011,7 +1011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/compression@npm:^1.8.1":
+"@types/compression@npm:1.8.1":
   version: 1.8.1
   resolution: "@types/compression@npm:1.8.1"
   dependencies:
@@ -1030,7 +1030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:^2.8.17":
+"@types/cors@npm:2.8.17":
   version: 2.8.17
   resolution: "@types/cors@npm:2.8.17"
   dependencies:
@@ -1082,7 +1082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:^4":
+"@types/express@npm:4.17.21":
   version: 4.17.21
   resolution: "@types/express@npm:4.17.21"
   dependencies:
@@ -1094,7 +1094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/figlet@npm:^1":
+"@types/figlet@npm:1.7.0":
   version: 1.7.0
   resolution: "@types/figlet@npm:1.7.0"
   checksum: 10c0/d33a07727e35d6b9ccb47c863d2d9c84b6cd23d2935cf904c495fce687558c842063a7e01176c03a354a2f40f2781004cce66ae446462e5f73c4ee23d7956daa
@@ -1108,7 +1108,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jsonwebtoken@npm:^9":
+"@types/jsonwebtoken@npm:9.0.7":
   version: 9.0.7
   resolution: "@types/jsonwebtoken@npm:9.0.7"
   dependencies:
@@ -1117,7 +1117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jwk-to-pem@npm:^2":
+"@types/jwk-to-pem@npm:2.0.3":
   version: 2.0.3
   resolution: "@types/jwk-to-pem@npm:2.0.3"
   checksum: 10c0/3aa067a7d9a09b1f1df032e62924abdde79be5c08f0975e25227bb54164eb4af746303c4bccdab3ba822a2568fdcf9b0721bc19384df53bff1221bddfa0a2cc9
@@ -1131,7 +1131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/morgan@npm:^1":
+"@types/morgan@npm:1.9.9":
   version: 1.9.9
   resolution: "@types/morgan@npm:1.9.9"
   dependencies:
@@ -1140,14 +1140,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mustache@npm:^4":
+"@types/mustache@npm:4.2.5":
   version: 4.2.5
   resolution: "@types/mustache@npm:4.2.5"
   checksum: 10c0/624975c39068d47407eadb89628aaff5ef60f3b7a71eef92a254310896a4e90518a01dcf71d95779ab2c986034a6ca5403d22fea237c67ff87f2e2b3fb794ea6
   languageName: node
   linkType: hard
 
-"@types/node-jose@npm:^1.1.13":
+"@types/node-jose@npm:1.1.13":
   version: 1.1.13
   resolution: "@types/node-jose@npm:1.1.13"
   dependencies:
@@ -1165,7 +1165,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pg@npm:^8.12.0":
+"@types/pg@npm:8.15.5":
   version: 8.15.5
   resolution: "@types/pg@npm:8.15.5"
   dependencies:
@@ -1211,7 +1211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/swagger-ui-express@npm:^4.1.7":
+"@types/swagger-ui-express@npm:4.1.7":
   version: 4.1.7
   resolution: "@types/swagger-ui-express@npm:4.1.7"
   dependencies:
@@ -1228,7 +1228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/zxcvbn@npm:^4":
+"@types/zxcvbn@npm:4.4.5":
   version: 4.4.5
   resolution: "@types/zxcvbn@npm:4.4.5"
   checksum: 10c0/b0f2f8a310de61860d66ee24964e9746cadcc166f3b44df384147ebddab186555bef701dcba0a47d04bc80dfa47d5de15f2a08e0abd713fe3a77304342ae68a8
@@ -1310,20 +1310,20 @@ __metadata:
   resolution: "api@workspace:."
   dependencies:
     "@asteasolutions/zod-to-openapi": "npm:^7.3.4"
-    "@biomejs/biome": "npm:^1.9.4"
-    "@types/bcryptjs": "npm:^2.4.6"
-    "@types/compression": "npm:^1.8.1"
-    "@types/cors": "npm:^2.8.17"
-    "@types/express": "npm:^4"
-    "@types/figlet": "npm:^1"
-    "@types/jsonwebtoken": "npm:^9"
-    "@types/jwk-to-pem": "npm:^2"
-    "@types/morgan": "npm:^1"
-    "@types/mustache": "npm:^4"
-    "@types/node-jose": "npm:^1.1.13"
-    "@types/pg": "npm:^8.12.0"
-    "@types/swagger-ui-express": "npm:^4.1.7"
-    "@types/zxcvbn": "npm:^4"
+    "@biomejs/biome": "npm:1.9.4"
+    "@types/bcryptjs": "npm:2.4.6"
+    "@types/compression": "npm:1.8.1"
+    "@types/cors": "npm:2.8.17"
+    "@types/express": "npm:4.17.21"
+    "@types/figlet": "npm:1.7.0"
+    "@types/jsonwebtoken": "npm:9.0.7"
+    "@types/jwk-to-pem": "npm:2.0.3"
+    "@types/morgan": "npm:1.9.9"
+    "@types/mustache": "npm:4.2.5"
+    "@types/node-jose": "npm:1.1.13"
+    "@types/pg": "npm:8.15.5"
+    "@types/swagger-ui-express": "npm:4.1.7"
+    "@types/zxcvbn": "npm:4.4.5"
     app-root-path: "npm:^3.1.0"
     bcryptjs: "npm:^2.4.3"
     chalk: "npm:^5.5.0"
@@ -1339,7 +1339,7 @@ __metadata:
     figlet: "npm:^1.9.3"
     helmet: "npm:^8.1.0"
     http-status-codes: "npm:^2.3.0"
-    husky: "npm:^9.1.7"
+    husky: "npm:9.1.7"
     inquirer: "npm:^12.4.3"
     jsonwebtoken: "npm:^9.0.2"
     jwk-to-pem: "npm:^2.0.7"
@@ -1352,9 +1352,9 @@ __metadata:
     pg: "npm:^8.14.1"
     pg-hstore: "npm:^2.3.4"
     swagger-ui-express: "npm:^5.0.1"
-    tsup: "npm:^8.4.0"
-    tsx: "npm:^4.19.2"
-    typescript: "npm:^5.7.2"
+    tsup: "npm:8.5.0"
+    tsx: "npm:4.19.2"
+    typescript: "npm:5.7.2"
     winston: "npm:^3.18.3"
     zod: "npm:^3.25.76"
     zxcvbn: "npm:^4.4.2"
@@ -2573,7 +2573,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^9.1.7":
+"husky@npm:9.1.7":
   version: 9.1.7
   resolution: "husky@npm:9.1.7"
   bin:
@@ -4393,7 +4393,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@npm:^8.4.0":
+"tsup@npm:8.5.0":
   version: 8.5.0
   resolution: "tsup@npm:8.5.0"
   dependencies:
@@ -4435,7 +4435,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:^4.19.2":
+"tsx@npm:4.19.2":
   version: 4.19.2
   resolution: "tsx@npm:4.19.2"
   dependencies:
@@ -4461,7 +4461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.7.2":
+"typescript@npm:5.7.2":
   version: 5.7.2
   resolution: "typescript@npm:5.7.2"
   bin:
@@ -4471,7 +4471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.7.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>":
   version: 5.7.2
   resolution: "typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"
   bin:
