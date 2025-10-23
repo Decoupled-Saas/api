@@ -1363,7 +1363,7 @@ __metadata:
     mustache: "npm:^4.2.0"
     node-jose: "npm:^2.2.0"
     ora: "npm:^8.2.0"
-    pg: "npm:^8.14.1"
+    pg: "npm:^8.16.3"
     pg-hstore: "npm:^2.3.4"
     swagger-ui-express: "npm:^5.0.1"
     tsup: "npm:8.5.0"
@@ -3579,7 +3579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pg@npm:^8.14.1":
+"pg@npm:^8.16.3":
   version: 8.16.3
   resolution: "pg@npm:8.16.3"
   dependencies:
