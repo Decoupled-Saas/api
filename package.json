@@ -60,7 +60,7 @@
     "@types/jsonwebtoken": "9.0.10",
     "@types/jwk-to-pem": "2.0.3",
     "@types/morgan": "1.9.10",
-    "@types/mustache": "4.2.5",
+    "@types/mustache": "4.2.6",
     "@types/node-jose": "1.1.13",
     "@types/pg": "8.15.5",
     "@types/swagger-ui-express": "4.1.7",
