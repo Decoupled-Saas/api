@@ -1226,13 +1226,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/swagger-ui-express@npm:4.1.7":
-  version: 4.1.7
-  resolution: "@types/swagger-ui-express@npm:4.1.7"
+"@types/swagger-ui-express@npm:4.1.8":
+  version: 4.1.8
+  resolution: "@types/swagger-ui-express@npm:4.1.8"
   dependencies:
     "@types/express": "npm:*"
     "@types/serve-static": "npm:*"
-  checksum: 10c0/8c337fd4166cd45aa7500b0ed3e19f6d5a5bc8c3d2b1ff554c1bc4735b14a3b816516bde2a759bba4ac066be3d8ea5988ecf02fe616507b6b82c6c9b1e70e969
+  checksum: 10c0/9c9e8327c40376b98b6fbd5dd2d722b7b5473e5c168af809431f16b34c948d2d3d44ce2157d2066355e9926ba86416481a30cd1cbcdbb064dd2fedb28442a85a
   languageName: node
   linkType: hard
 
@@ -1336,7 +1336,7 @@ __metadata:
     "@types/mustache": "npm:4.2.5"
     "@types/node-jose": "npm:1.1.13"
     "@types/pg": "npm:8.15.5"
-    "@types/swagger-ui-express": "npm:4.1.7"
+    "@types/swagger-ui-express": "npm:4.1.8"
     "@types/zxcvbn": "npm:4.4.5"
     app-root-path: "npm:^3.1.0"
     bcryptjs: "npm:^2.4.3"
