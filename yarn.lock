@@ -1350,7 +1350,7 @@ __metadata:
     express: "npm:^4.21.2"
     express-rate-limit: "npm:^7.5.0"
     express-validator: "npm:^7.3.0"
-    figlet: "npm:^1.9.3"
+    figlet: "npm:^1.10.0"
     helmet: "npm:^8.1.0"
     http-status-codes: "npm:^2.3.0"
     husky: "npm:9.1.7"
@@ -2321,14 +2321,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"figlet@npm:^1.9.3":
-  version: 1.9.3
-  resolution: "figlet@npm:1.9.3"
+"figlet@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "figlet@npm:1.10.0"
   dependencies:
     commander: "npm:^14.0.0"
   bin:
     figlet: bin/index.js
-  checksum: 10c0/fbe02933b86713e56217d0c7d4a77c2950cb5bcfc1e7419daf7b2d3d172a4bc84f4d083c5172d000a82fcf67cba810aee8b96a8387b286cb5227db90b68ab5a0
+  checksum: 10c0/eff53d00e9b18a8bb3af15d3544a6b84969187d3131fe2783bfc14e00d76c5d7f8392673b9abc040cfb14f571e511ddc982137cbfae41b06afb7b25b1f9d048d
   languageName: node
   linkType: hard
 
