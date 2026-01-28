@@ -1037,12 +1037,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:2.8.17":
-  version: 2.8.17
-  resolution: "@types/cors@npm:2.8.17"
+"@types/cors@npm:2.8.19":
+  version: 2.8.19
+  resolution: "@types/cors@npm:2.8.19"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 10c0/457364c28c89f3d9ed34800e1de5c6eaaf344d1bb39af122f013322a50bc606eb2aa6f63de4e41a7a08ba7ef454473926c94a830636723da45bf786df032696d
+  checksum: 10c0/b5dd407040db7d8aa1bd36e79e5f3f32292f6b075abc287529e9f48df1a25fda3e3799ba30b4656667ffb931d3b75690c1d6ca71e39f7337ea6dfda8581916d0
   languageName: node
   linkType: hard
 
@@ -1089,15 +1089,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:4.17.23":
-  version: 4.17.23
-  resolution: "@types/express@npm:4.17.23"
+"@types/express@npm:4.17.25":
+  version: 4.17.25
+  resolution: "@types/express@npm:4.17.25"
   dependencies:
     "@types/body-parser": "npm:*"
     "@types/express-serve-static-core": "npm:^4.17.33"
     "@types/qs": "npm:*"
-    "@types/serve-static": "npm:*"
-  checksum: 10c0/60490cd4f73085007247e7d4fafad0a7abdafa34fa3caba2757512564ca5e094ece7459f0f324030a63d513f967bb86579a8682af76ae2fd718e889b0a2a4fe8
+    "@types/serve-static": "npm:^1"
+  checksum: 10c0/f42b616d2c9dbc50352c820db7de182f64ebbfa8dba6fb6c98e5f8f0e2ef3edde0131719d9dc6874803d25ad9ca2d53471d0fec2fbc60a6003a43d015bab72c4
   languageName: node
   linkType: hard
 
@@ -1155,10 +1155,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mustache@npm:4.2.5":
-  version: 4.2.5
-  resolution: "@types/mustache@npm:4.2.5"
-  checksum: 10c0/624975c39068d47407eadb89628aaff5ef60f3b7a71eef92a254310896a4e90518a01dcf71d95779ab2c986034a6ca5403d22fea237c67ff87f2e2b3fb794ea6
+"@types/mustache@npm:4.2.6":
+  version: 4.2.6
+  resolution: "@types/mustache@npm:4.2.6"
+  checksum: 10c0/f49a83b189e92c962e9b61094c80c979f115ea876bd746bdb9f725c38ab8981a6691e3d1d5cd008ade24b6e5040602970bc0bc60ade71772501d1df8adc7adad
   languageName: node
   linkType: hard
 
@@ -1215,6 +1215,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/send@npm:<1":
+  version: 0.17.6
+  resolution: "@types/send@npm:0.17.6"
+  dependencies:
+    "@types/mime": "npm:^1"
+    "@types/node": "npm:*"
+  checksum: 10c0/a9d76797f0637738062f1b974e0fcf3d396a28c5dc18c3f95ecec5dabda82e223afbc2d56a0bca46b6326fd7bb229979916cea40de2270a98128fd94441b87c2
+  languageName: node
+  linkType: hard
+
 "@types/serve-static@npm:*":
   version: 1.15.7
   resolution: "@types/serve-static@npm:1.15.7"
@@ -1226,13 +1236,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/swagger-ui-express@npm:4.1.7":
-  version: 4.1.7
-  resolution: "@types/swagger-ui-express@npm:4.1.7"
+"@types/serve-static@npm:^1":
+  version: 1.15.10
+  resolution: "@types/serve-static@npm:1.15.10"
+  dependencies:
+    "@types/http-errors": "npm:*"
+    "@types/node": "npm:*"
+    "@types/send": "npm:<1"
+  checksum: 10c0/842fca14c9e80468f89b6cea361773f2dcd685d4616a9f59013b55e1e83f536e4c93d6d8e3ba5072d40c4e7e64085210edd6646b15d538ded94512940a23021f
+  languageName: node
+  linkType: hard
+
+"@types/swagger-ui-express@npm:4.1.8":
+  version: 4.1.8
+  resolution: "@types/swagger-ui-express@npm:4.1.8"
   dependencies:
     "@types/express": "npm:*"
     "@types/serve-static": "npm:*"
-  checksum: 10c0/8c337fd4166cd45aa7500b0ed3e19f6d5a5bc8c3d2b1ff554c1bc4735b14a3b816516bde2a759bba4ac066be3d8ea5988ecf02fe616507b6b82c6c9b1e70e969
+  checksum: 10c0/9c9e8327c40376b98b6fbd5dd2d722b7b5473e5c168af809431f16b34c948d2d3d44ce2157d2066355e9926ba86416481a30cd1cbcdbb064dd2fedb28442a85a
   languageName: node
   linkType: hard
 
@@ -1327,16 +1348,16 @@ __metadata:
     "@asteasolutions/zod-to-openapi": "npm:^8.3.3"
     "@biomejs/biome": "npm:1.9.4"
     "@types/compression": "npm:1.8.1"
-    "@types/cors": "npm:2.8.17"
-    "@types/express": "npm:4.17.23"
+    "@types/cors": "npm:2.8.19"
+    "@types/express": "npm:4.17.25"
     "@types/figlet": "npm:1.7.0"
     "@types/jsonwebtoken": "npm:9.0.10"
     "@types/jwk-to-pem": "npm:2.0.3"
     "@types/morgan": "npm:1.9.10"
-    "@types/mustache": "npm:4.2.5"
+    "@types/mustache": "npm:4.2.6"
     "@types/node-jose": "npm:1.1.13"
     "@types/pg": "npm:8.16.0"
-    "@types/swagger-ui-express": "npm:4.1.7"
+    "@types/swagger-ui-express": "npm:4.1.8"
     "@types/zxcvbn": "npm:4.4.5"
     app-root-path: "npm:^3.1.0"
     bcryptjs: "npm:^2.4.3"
