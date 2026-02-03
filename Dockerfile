@@ -1,4 +1,4 @@
-FROM node:22.22.0-slim@sha256:fbec45099b67841ba7d32c74b42c55fd96403e43d0c3181dc049606737f1ee5c
+FROM node:24.13.0-slim@sha256:4660b1ca8b28d6d1906fd644abe34b2ed81d15434d26d845ef0aced307cf4b6f
 WORKDIR /usr/src/app
 COPY . .
 RUN corepack enable yarn  \
