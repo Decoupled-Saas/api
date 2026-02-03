@@ -52,7 +52,7 @@
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.3.14",
     "@types/compression": "1.8.1",
     "@types/cors": "2.8.17",
     "@types/express": "4.17.23",
