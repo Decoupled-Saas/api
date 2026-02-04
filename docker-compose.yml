@@ -15,7 +15,7 @@ services:
       - db-data:/var/lib/postgresql/data
 
   mailpit:
-    image: axllent/mailpit@sha256:b1f1be18af530d939a11ee8820b379e0c88eeec204d904bfad68862adced3a5a
+    image: axllent/mailpit@sha256:0f93f36075f5f6fe428655d94299dda59b9a533d3fe9ce62909a72ac6fe455a9
     logging:
       driver: 'none' # disable saving logs
     ports:
@@ -24,7 +24,7 @@ services:
 
   pgweb:
     restart: always
-    image: sosedoff/pgweb@sha256:8f1ed22e10c9da0912169b98b62ddc54930dc39a5ae07b0f1354d2a93d44c6ed
+    image: sosedoff/pgweb@sha256:a5256d416e2e8b92d69a4459058e3eca33a9f075d8325491644411d0bc3bd70b
     ports:
       - '8081:8081'
     links:
