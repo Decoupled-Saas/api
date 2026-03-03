@@ -1180,14 +1180,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pg@npm:8.16.0":
-  version: 8.16.0
-  resolution: "@types/pg@npm:8.16.0"
+"@types/pg@npm:8.18.0":
+  version: 8.18.0
+  resolution: "@types/pg@npm:8.18.0"
   dependencies:
     "@types/node": "npm:*"
     pg-protocol: "npm:*"
     pg-types: "npm:^2.2.0"
-  checksum: 10c0/421fe7c07d5c0226835d362414a63653f86251ee966150d807ed60174c13921d1b8a3e2f1c2bfba9659ec0282ca50974030c4c1efcd575003eb922ea12ca7d05
+  checksum: 10c0/cafece430d8d583a75eb3f7beff7b3e97e05ef0b6326ae5070476bda46ccc42edb72724b9c2bf799cea93a48b1342319bfbbe1217fff5ffa5c322b8d637ea949
   languageName: node
   linkType: hard
 
@@ -1335,7 +1335,7 @@ __metadata:
     "@types/morgan": "npm:1.9.10"
     "@types/mustache": "npm:4.2.5"
     "@types/node-jose": "npm:1.1.13"
-    "@types/pg": "npm:8.16.0"
+    "@types/pg": "npm:8.18.0"
     "@types/swagger-ui-express": "npm:4.1.7"
     "@types/zxcvbn": "npm:4.4.5"
     app-root-path: "npm:^3.1.0"
