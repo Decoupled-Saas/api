@@ -21,7 +21,7 @@
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^8.3.3",
     "app-root-path": "^3.1.0",
-    "bcryptjs": "^2.4.3",
+    "bcryptjs": "^3.0.3",
     "chalk": "^5.5.0",
     "change-case": "^5.4.4",
     "commander": "^13.1.0",
