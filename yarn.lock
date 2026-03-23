@@ -5,14 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@asteasolutions/zod-to-openapi@npm:^8.3.3":
-  version: 8.4.0
-  resolution: "@asteasolutions/zod-to-openapi@npm:8.4.0"
+"@asteasolutions/zod-to-openapi@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "@asteasolutions/zod-to-openapi@npm:8.5.0"
   dependencies:
     openapi3-ts: "npm:^4.1.2"
   peerDependencies:
     zod: ^4.0.0
-  checksum: 10c0/2099663ed790c732d80009589ca67e73d59162e1b505b8de70ce634f5296e81a097b54feccb6d1256d8618018680625ccd5889c460bfe44ccfbec1d67126a321
+  checksum: 10c0/989674e297dbf5daef56813795d5b40a18d8de49e95f67d4d81f17e5b59f678f1a202b68631fa1a2bc83f9bbcb57db90c6a33d33e71a09579e46a0707e785a4b
   languageName: node
   linkType: hard
 
@@ -1324,7 +1324,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api@workspace:."
   dependencies:
-    "@asteasolutions/zod-to-openapi": "npm:^8.3.3"
+    "@asteasolutions/zod-to-openapi": "npm:^8.5.0"
     "@biomejs/biome": "npm:1.9.4"
     "@types/compression": "npm:1.8.1"
     "@types/cors": "npm:2.8.17"
