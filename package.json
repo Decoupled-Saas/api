@@ -27,7 +27,7 @@
     "commander": "^13.1.0",
     "compression": "^1.8.1",
     "cors": "^2.8.6",
-    "dotenv": "^16.6.1",
+    "dotenv": "^17.4.2",
     "envalid": "^8.1.1",
     "express": "^4.22.1",
     "express-rate-limit": "^7.5.1",
