@@ -1313,7 +1313,7 @@ __metadata:
     compression: "npm:^1.8.1"
     cors: "npm:^2.8.6"
     dotenv: "npm:^16.6.1"
-    envalid: "npm:^8.1.1"
+    envalid: "npm:^8.2.0"
     express: "npm:^4.22.2"
     express-rate-limit: "npm:^7.5.1"
     express-validator: "npm:^7.3.2"
@@ -1870,12 +1870,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"envalid@npm:^8.1.1":
-  version: 8.1.1
-  resolution: "envalid@npm:8.1.1"
+"envalid@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "envalid@npm:8.2.0"
   dependencies:
     tslib: "npm:2.8.1"
-  checksum: 10c0/065c8586487688b4ae554eb7e05d279d505a210f662cb72fab44dc8bc0d81fb0e62efd9163a1b38eeb962aea1d60fd118d85a155c85c50e079b5acf6c522c93c
+  checksum: 10c0/c8681e30ffe8489937c68233d21f8527c09685585d8403dff3736e8880c7707926cb7992678876059354130328c9a3061d2f1cd57c9f3ff365072a2561a9b394
   languageName: node
   linkType: hard
 
