@@ -1324,7 +1324,7 @@ __metadata:
     inquirer: "npm:^12.11.1"
     jsonwebtoken: "npm:^9.0.3"
     jwk-to-pem: "npm:^2.0.7"
-    knex: "npm:^3.2.10"
+    knex: "npm:^3.3.0"
     moment: "npm:^2.30.1"
     morgan: "npm:^1.11.0"
     mustache: "npm:^4.2.0"
@@ -2603,7 +2603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knex@npm:^3.2.10":
+"knex@npm:^3.3.0":
   version: 3.3.0
   resolution: "knex@npm:3.3.0"
   dependencies:
